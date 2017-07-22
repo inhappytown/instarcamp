@@ -1,0 +1,13 @@
+.profile__info {
+  display: inline-block;
+}
+.profile .profile__header img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile__name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}

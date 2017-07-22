@@ -1,0 +1,58 @@
+.photo {
+max-width: 600px;
+  margin: 10px auto;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+background: #FFFFFF;
+}
+.feed {
+  display: flex;
+  align-items: center;
+}
+.photo__header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+.photo__header .photo__username {
+margin-left: 20px;
+justify-content: center;
+font-size: 15px;
+font-weight: 600;
+
+}
+.photo__header img{
+  margin-top: 10px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.photo__image {
+  max-width: 100%;
+}
+.photo__actions{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.photo__comment{
+  margin: 10px;
+
+}
+.comments__username {
+  font-weight: 600;
+  margin-right: 20px;
+}
+.photo__comment .comments__time {
+  font-size: 10px;
+  color: #999;
+}
+.photo__add-comment textarea {
+  border: 0;
+  resize: none;
+  width: 95%;
+  padding-top: 16px;
+  font-size: 14px;
+}
