@@ -1,58 +1,166 @@
 .photo {
-max-width: 600px;
-  margin: 10px auto;
+  max-width: 600px;
+  margin: 0 auto;
   width: 100%;
-  border-radius: 3px;
+  margin-top: 60px;
   border: 1px solid #e6e6e6;
-background: #FFFFFF;
+  border-radius: 3px;
+  background-color: white;
 }
-.feed {
-  display: flex;
-  align-items: center;
-}
-.photo__header {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  font-weight: 600;
-}
-.photo__header .photo__username {
-margin-left: 20px;
-justify-content: center;
-font-size: 15px;
-font-weight: 600;
 
-}
-.photo__header img{
-  margin-top: 10px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.photo__image {
-  max-width: 100%;
-}
-.photo__actions{
+.photo .photo__header {
+  padding: 10px 15px;
+  display: flex;
   font-weight: 600;
+  align-items: center;
+}
+
+.photo__header .photo__thumb img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  animation: 3s big ease-in-out;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(1);}
+
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.photo .photo__image {
+  max-width: 100%;}
+}
+
+.photo__info {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.photo__actions {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.photo__actions i:first-child {
+  margin-right: 10px;
+}
+
+.photo__actions i {
+  cursor: pointer;
+}
+
+.photo__info .photo__likes {
+  font-weight: 600;
+  display: block;
   margin-bottom: 10px;
 }
-.photo__comment{
-  margin: 10px;
 
+.photo .photo__comment {
+  margin-bottom: 7px;
 }
-.comments__username {
+
+.photo__comments .comments__username {
   font-weight: 600;
-  margin-right: 20px;
+  margin-right: 10px;
 }
-.photo__comment .comments__time {
+
+.photo__comment a {
+  color: #003569;
+}
+
+.photo .photo__comments {
+  margin-bottom: 10px;
+}
+
+.photo .photo__date {
   font-size: 10px;
   color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
 }
+
+.photo .photo__add-comment {
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .photo__add-comment textarea {
   border: 0;
   resize: none;
   width: 95%;
   padding-top: 16px;
   font-size: 14px;
+}
+
+.photo__add-comment textarea:focus {
+  outline: none;
+}
+
+.photo__add-comment i {
+  cursor: pointer;
+}
+
+.heart-pumping{
+  color: red;
+  animation: .6s pumping infinite linear;
+}
+@keyframes pumping {
+  0%{
+    transform: scale(0.5);
+    }
+ 50%{
+   transform: scale(1);
+ }
+ 100%{
+   transform: scale(0.5);
+ }
+
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.overlay i {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.overlay .overlay__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.overlay__menu a {
+  background: white;
+  width: 400px;
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.overlay__menu a:hover {
+  background: #e2e2e2;
 }

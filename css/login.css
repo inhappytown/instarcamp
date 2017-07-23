@@ -36,11 +36,13 @@
 .login .login__box--transparent .login__appstores {
   margin-top: 20px;
 }
-
 .login .login__box--transparent .login__appstore {
   height: 36px;
+  transition-property: width, height;
 }
-
+.login__appstore:hover {
+  transform: rotate(380deg);
+}
 .login .login__box form input {
   display: block;
   width: 100%;

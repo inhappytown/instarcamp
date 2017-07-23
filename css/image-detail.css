@@ -1,24 +1,19 @@
-
 .photo--detail {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 900px;
+  max-height: 500px;
 }
 
 .photo--detail .photo__image {
   min-height: 50%;
-  max-width: 100%;
+  width: 60%;
 }
 
 .photo--detail .photo__info {
   width: 40%;
-  margin-top: 100%
 }
-.photo__info {
-margin-left: 30px;
-}
-
 .photo__add-comment textarea {
   margin-top: 20px;
   border: 0;
