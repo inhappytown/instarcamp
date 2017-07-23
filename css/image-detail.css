@@ -1,0 +1,41 @@
+
+.photo--detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+}
+
+.photo--detail .photo__image {
+  min-height: 50%;
+  max-width: 100%;
+}
+
+.photo--detail .photo__info {
+  width: 40%;
+  margin-top: 100%
+}
+.photo__info {
+margin-left: 30px;
+}
+
+.photo__add-comment textarea {
+  margin-top: 20px;
+  border: 0;
+  resize: none;
+  width: 90%;
+  padding-top: 16px;
+  font-size: 14px;
+}
+.photo__actions{
+  margin-top: 20px;
+  font-size: 25px;
+}
+.photo__likes{
+font-weight: 600;
+
+}
+.photo__date{
+  font-size: 10px;
+  color: #999;
+}

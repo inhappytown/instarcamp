@@ -1,6 +1,9 @@
 .profile__info {
   display: inline-block;
 }
+.profile__images{
+  width: 100%;
+}
 .profile .profile__header img{
   width: 100px;
   height: 100px;
